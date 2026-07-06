@@ -71,10 +71,17 @@ export default function DocsPage({ params }: PageProps) {
 
   return (
     <div className="shell">
+      <input type="checkbox" id="sidebar-toggle" className="sidebar-toggle-input" />
       <Sidebar activeSlug={activeSlug} />
+      <label htmlFor="sidebar-toggle" className="sidebar-overlay"></label>
       <main className="content-wrap">
         <header className="topbar">
-          <div className="crumb">Purr Poker / {doc.group}</div>
+          <div className="crumb-wrap">
+            <label htmlFor="sidebar-toggle" className="sidebar-toggle-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </label>
+            <div className="crumb">Purr Poker / {doc.group}</div>
+          </div>
           <div className="top-actions">
             <a className="launch" href="https://app.purrpoker.xyz" target="_blank" rel="noreferrer">Launch App</a>
           </div>
