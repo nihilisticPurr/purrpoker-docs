@@ -787,24 +787,24 @@ export const docs: DocPage[] = [
       <h2>Company Information</h2>
       <div class="feature-grid">
         <article>
-          <h3 style="margin-top:0;">Company Details</h3>
+          <h3 style="margin-top:0;color:#f0d1b3;">Company Details</h3>
           <ul style="list-style:none;padding:0;margin:0;line-height:2;">
             <li><strong>Legal Entity:</strong> Purr Games Limited</li>
             <li><strong>Jurisdiction:</strong> Belize</li>
-            <li><strong>Registration Date:</strong> 2025</li>
+            <li><strong>Registration Date:</strong> In Progress</li>
             <li><strong>Company Type:</strong> Private Limited Company</li>
           </ul>
         </article>
         <article>
-          <h3 style="margin-top:0;">Legal Framework</h3>
-          <p>Purr Games operates under Belize legal framework, which provides a balanced approach to blockchain innovation while maintaining appropriate regulatory oversight. The company is currently applying for a license to be regulated by Anjouan Gaming Authority.</p>
+          <h3 style="margin-top:0;color:#f0d1b3;">Legal Framework</h3>
+          <p>Purr Games Limited plans to operate under Belize legal framework, which provides a balanced approach to blockchain innovation while maintaining appropriate regulatory oversight. The company is currently applying for a license to be regulated by Anjouan Gaming Authority.</p>
         </article>
       </div>
 
       <h2>Platform Approach</h2>
       <div class="feature-grid">
         <article>
-          <h3 style="margin-top:0;">Decentralized Structure</h3>
+          <h3 style="margin-top:0;color:#f0d1b3;">Decentralized Structure</h3>
           <p>Purr Poker follows a decentralized model where:</p>
           <ul>
             <li>Smart contracts govern funds and settlement</li>
@@ -815,7 +815,7 @@ export const docs: DocPage[] = [
           </ul>
         </article>
         <article>
-          <h3 style="margin-top:0;">KYC/AML Approach</h3>
+          <h3 style="margin-top:0;color:#f0d1b3;">KYC/AML Approach</h3>
           <p>As a decentralized platform:</p>
           <ul>
             <li>No KYC requirements for player participation</li>
