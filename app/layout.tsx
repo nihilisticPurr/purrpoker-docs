@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Purr Poker Documentation",
-  description: "Static documentation replica for Purr Poker on HyperEVM."
+  description: "Documentation for PurrPoker. Powered by Hyperliquid."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
