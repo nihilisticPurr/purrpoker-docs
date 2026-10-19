@@ -636,7 +636,7 @@ export const docs: DocPage[] = [
             <div style="display:flex;align-items:center;gap:12px;">
               <h3 style="margin:0;font-size:24px;color:#f0d1b3;">Broje</h3>
             </div>
-            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Full Stack Developer</p>
+            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Chief Technology Officer</p>
             <p style="margin:0;font-size:14px;line-height:1.6;">Full stack developer, joined us from very early days as frontend UX and took over the reins later on.</p>
           </div>
         </article>
@@ -651,7 +651,7 @@ export const docs: DocPage[] = [
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
-            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Software Engineer</p>
+            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Community Manager</p>
             <p style="margin:0;font-size:14px;line-height:1.6;">REBO pairs a background in software engineering with a passion for web3, market trading, and poker. Bringing market experience and dev know-how, he adds the tech spice that makes onboarding players seamless and builds an awesome gaming experience.</p>
           </div>
         </article>
