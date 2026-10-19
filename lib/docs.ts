@@ -726,29 +726,6 @@ export const docs: DocPage[] = [
           <p>Feedback and discussions help improve the platform. Express your thoughts clearly and constructively, focusing on ideas rather than individuals. Listen actively to others and be open to different perspectives within the community.</p>
         </article>
       </div>
-      <h2>Chat & Communication Rules</h2>
-      <ol class="steps">
-        <li>
-          <strong>Table Chat Etiquette</strong>
-          <ul>
-            <li>No abusive language, harassment, or personal attacks</li>
-            <li>Avoid discussing active hands while play is in progress</li>
-            <li>No sharing of hole card information during multi-way pots</li>
-            <li>Keep conversations respectful, even during tough beats</li>
-            <li>English is recommended for global tables, but other languages are acceptable for private games</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Forum & Discord Rules</strong>
-          <ul>
-            <li>Stay on topic in dedicated channels and threads</li>
-            <li>No spam, excessive self-promotion, or advertising</li>
-            <li>Respect moderator decisions and platform rules</li>
-            <li>Use appropriate channels for bug reports, feature requests, and support</li>
-            <li>Protect your privacy and never share personal financial information</li>
-          </ul>
-        </li>
-      </ol>
       <h2>Community Contributions</h2>
       <article class="callout" style="padding:24px;border:1px solid rgba(255,255,255,.05);border-radius:12px;background:none;">
         <p style="margin-top:0;margin-bottom:24px;">The Purr Poker ecosystem thrives through active community participation. Here are ways to contribute:</p>
