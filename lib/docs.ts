@@ -15,7 +15,7 @@ export const docs: DocPage[] = [
     group: "Introduction",
     description: "",
     html: `
-      <p class="lead"><img src="/CatChip.png" alt="Cat Chip" style="width:180px; float:right; margin-left: 20px; border-radius: 12px;" />Purr Poker is a decentralized poker platform built on Hyperliquid EVM. We combine traditional poker gameplay with cutting-edge blockchain technology to deliver instant-settlement gameplay, provably fair mechanics, and a user-owned ecosystem. With a 3.5% rake (vs. industry standard 5%), transparent redistribution to $POKER tokenholders, and non-mandatory KYC, Purr Poker eliminates the frustrations of centralized platforms.</p>
+      <p class="lead"><img src="/CatChip.png" alt="Cat Chip" style="width:180px; float:right; margin-left: 20px; border-radius: 12px;" />Purr Poker is a decentralized poker platform built on Hyperliquid EVM. We combine traditional poker gameplay with cutting-edge blockchain technology to deliver instant-settlement gameplay and a user-owned ecosystem. With a 3.5% rake (vs. industry standard 5%), transparent redistribution to $POKER tokenholders, and non-mandatory KYC, Purr Poker eliminates the frustrations of centralized platforms.</p>
       <h2>Why Purr Poker?</h2>
       <div class="feature-grid">
         <article>
@@ -24,7 +24,7 @@ export const docs: DocPage[] = [
             <li>High rakes, often 5% or more, reducing player profitability.</li>
             <li>Long withdrawal times that can take several business days.</li>
             <li>KYC and deposit limits that alienate crypto-native users.</li>
-            <li>Counterparty risks and opaque RNG systems.</li>
+            <li>Counterparty risks and centralized fund custody.</li>
             <li>Centralized control with no player ownership.</li>
           </ul>
         </article>
@@ -40,16 +40,15 @@ export const docs: DocPage[] = [
       <h2>Key Features</h2>
       <div class="feature-grid">
         <article><h3>Instant Settlement</h3><p>Powered by Hyperliquid EVM, Purr Poker offers sub-second transaction finality. This ensures your winnings are available immediately, without the delays typical of centralized poker sites.</p></article>
-        <article><h3>Provably Fair Gameplay</h3><p>By launch, we will have obtained an industry-recognized certificate in relation to our Random Number Generator (RNG), which certifies that our RNG has been tested for complete fairness and is compliant with industry standards for highly-regulated jurisdictions.</p></article>
         <article><h3>Community Ownership</h3><p>The $POKER token gives the community a real stake in the platform. With 65% of tokens allocated to the community via airdrops and staking rewards, and a 65% minimum buyback model from platform revenue, value flows directly to players and tokenholders.</p></article>
         <article><h3>Premium Gameplay Benefits</h3><p>Stake $POKER to unlock premium features like rake discounts, rabbit hunting, HUD stats, and extended timebanks. Create your own custom tables with configurable settings and earn 75% of the rake collected.</p></article>
       </div>
       <h2>Platform Overview</h2>
       <ol class="steps">
-        <li><strong>Game Modes</strong><br/>Starting with No-Limit Texas Hold'em cash games, Purr Poker will expand to include tournaments (Q4 2025), Pot-Limit Omaha and multi-tabling (Q1 2026), with support for cross-chain gameplay planned for Q2 2026.</li>
+        <li><strong>Game Modes</strong><br/>Starting with No-Limit Texas Hold'em cash games, Purr Poker will expand to include tournaments (Q4 2025), Pot-Limit Omaha and multi-tabling (2027), with support for cross-chain gameplay planned for 2027.</li>
         <li><strong>Tokenomics</strong><br/>The $POKER token powers the ecosystem with a total supply of 100M tokens. 65% is allocated to the community, with Season 1 airdrops beginning in H2 2025 rewarding active gameplay and participation.</li>
         <li><strong>Technical Architecture</strong><br/>Purr Poker leverages Hyperliquid EVM for lightning-fast, low-cost transactions. Our hybrid architecture combines on-chain security for funds with off-chain efficiency for gameplay, delivering the best of both worlds.</li>
-        <li><strong>User Experience</strong><br/>Wallet-based onboarding makes it easy to start playing instantly. Our sleek interface will support multi-tabling by Q4 2025, with a mobile app planned for H2 2026 to bring the Purr Poker experience to iOS and Android.</li>
+        <li><strong>User Experience</strong><br/>Wallet-based onboarding makes it easy to start playing instantly. Our sleek interface will support multi-tabling, with a mobile app planned for 2027 to bring the Purr Poker experience to iOS and Android.</li>
       </ol>
     `
   },
@@ -60,11 +59,11 @@ export const docs: DocPage[] = [
     description: "The points system for Season 1 airdrop allocation.",
     html: `
       <p class="lead">Purr Points are the core mechanism for earning your share of the $POKER token airdrop. Play poker, participate in the community, and accumulate points to maximize your allocation at TGE.</p>
-      <div class="callout success"><strong>LIVE NOW</strong><br/>Season 1 launched in December 2025 and runs for at least 6 months. All points earned during this period will determine your $POKER allocation at TGE (2026).</div>
-      <div class="stat-grid"><div><span>Started</span><strong>December 2025</strong></div><div><span>Duration</span><strong>6+ months</strong></div><div><span>TGE</span><strong>2026</strong></div></div>
+      <div class="callout success"><strong>LIVE NOW</strong><br/>Season 1 launched in December 2025 and runs for at least 6 months. All points earned during this period will determine your $POKER allocation at TGE (2027).</div>
+      <div class="stat-grid"><div><span>Started</span><strong>December 2025</strong></div><div><span>Duration</span><strong>6+ months</strong></div><div><span>TGE</span><strong>2027</strong></div></div>
       <h2>How do I earn Purr Points?</h2><p>Purr Points are earned by actively participating in the Purr Poker ecosystem. Every hand you play, every tournament you enter, and every interaction on the platform contributes to your point total.</p><p>Your total Purr Points at the end of Season 1 determine your share of the Season 1 airdrop. With 65% of the total $POKER supply (65,000,000 tokens) allocated to the community across all seasons, a significant portion will be distributed to Season 1 participants.</p>
       <h3>1. Gameplay (Primary Source)</h3><ul><li><strong>Cash Games:</strong> Points earned based on hands played, rake contributed, and overall activity at cash game tables.</li><li><strong>Tournaments:</strong> Points earned for tournament entries and participation, with bonuses for deep runs and wins.</li></ul><h3>2. Community Participation (Secondary Source)</h3><p>A smaller portion of points can be earned through community engagement. This helps build a vibrant ecosystem while complementing your gameplay rewards.</p>
-      <h2>Airdrop Distribution</h2><div class="stat-grid"><div><span>Total Community Allocation</span><strong>65%<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Across all seasons</small></strong></div><div><span>TGE Date</span><strong>2026<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Token Generation Event</small></strong></div><div><span>Season 1 Duration</span><strong>6+ Mo.<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Starting December 2025</small></strong></div></div>
+      <h2>Airdrop Distribution</h2><div class="stat-grid"><div><span>Total Community Allocation</span><strong>65%<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Across all seasons</small></strong></div><div><span>TGE Date</span><strong>2027<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Token Generation Event</small></strong></div><div><span>Season 1 Duration</span><strong>6+ Mo.<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Starting December 2025</small></strong></div></div>
       <h3>How Your Allocation is Calculated</h3><p>Your $POKER airdrop allocation is proportional to your share of total Purr Points earned during Season 1:</p><p><code>Your Allocation = (Your Points / Total Points) × Season 1 Pool</code></p><p>A significant portion of the 65% community allocation will be distributed to Season 1 participants, with the remainder reserved for future seasons and ongoing rewards.</p>
       <h2>Anti-Sybil Protection</h2><h3>Fair Distribution for Real Players</h3><p>Purr Poker implements robust anti-Sybil measures to ensure fair distribution. Our goal is to reward genuine poker players, not airdrop farmers.</p><ul><li><strong>Gameplay Focus:</strong> The majority of points come from actual poker activity, making farming expensive and impractical.</li><li><strong>Undisclosed Criteria:</strong> Specific point calculations are not publicly disclosed to prevent gaming the system.</li><li><strong>Behavioral Analysis:</strong> Advanced detection systems identify suspicious patterns and fraudulent activity.</li><li><strong>Quality Over Quantity:</strong> Genuine engagement is weighted more heavily than raw volume.</li></ul><div class="callout warning"><p><strong>⚠️ Warning:</strong> Any Sybil activity intended to earn Purr Points unfairly may result in penalties. In addition, predatory or unethical behaviors — including but not limited to bum-hunting, hit-and-run, grimming, camping, chip-dumping, collusion, or the use of real-time assistance bots — are strictly prohibited on Purr Poker.</p><p>If such activity is detected, Purr Poker reserves the right to penalize or forfeit all associated Purr Points and, in severe cases, suspend or permanently block the account from future play.</p></div>
       <h2>Best Strategies</h2><div class="feature-grid"><article><span>1</span><h3 style="color:#f0d1b3;">Play Consistently</h3><p>Regular gameplay is the most effective way to earn Purr Points. Focus on playing poker — whether cash games or tournaments — at stakes you're comfortable with. Consistency matters more than occasional large volume.</p></article><article><span>2</span><h3 style="color:#f0d1b3;">Join the Community</h3><p>Engage with the Purr Poker community on Discord. While community points are secondary, they complement your gameplay earnings and help you stay informed about events and promotions.</p></article><article><span>3</span><h3 style="color:#f0d1b3;">Participate in Events</h3><p>Special tournaments and platform events often have point multipliers or bonus rewards. Keep an eye on announcements for opportunities to boost your point earnings.</p></article><article><span>4</span><h3 style="color:#f0d1b3;">Start Early</h3><p>Season 1 is live now. The earlier you start accumulating points, the larger your share of the airdrop will be. Don't wait until the last minute — compound your participation over time.</p></article></div>
@@ -80,14 +79,27 @@ export const docs: DocPage[] = [
     html: `
       <p class="lead">The $POKER token is the governance and utility token of the Purr Poker ecosystem, designed to give players ownership of the platform through revenue sharing, premium features, and governance rights.</p>
       <h2>Token Overview</h2>
-      <div class="stat-grid"><div><span>Token Type</span><strong>ERC-20 token on the Hyperliquid EVM, with governance functionality and tiered staking benefits.</strong></div><div><span>Total Supply</span><strong>100,000,000 $POKER tokens<br/><small style="font-size:13px;font-weight:normal;color:#a9bbc9">Fixed supply with buyback model</small></strong></div><div><span>TGE Date</span><strong>H2 2026</strong></div></div>
+      <div class="stat-grid">
+        <div style="padding:20px;">
+          <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;color:#f0d1b3;">Token Type</h3>
+          <p style="margin:0;font-size:14px;color:#dce8f0;line-height:1.5;">ERC-20 token on the Hyperliquid EVM, with governance functionality and tiered staking benefits.</p>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;color:#f0d1b3;">Total Supply</h3>
+          <p style="margin:0;font-size:14px;color:#dce8f0;line-height:1.5;">100,000,000 $POKER tokens<br/><em style="font-size:13px;color:#a9bbc9;">Fixed supply with buyback model</em></p>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;color:#f0d1b3;">TGE Date</h3>
+          <p style="margin:0;font-size:14px;color:#dce8f0;line-height:1.5;">2027</p>
+        </div>
+      </div>
       <h2>Token Distribution</h2>
       <img src="/tokenomics.png" alt="Token Distribution" style="width:100%; max-width: 440px; margin: 30px auto; display: block; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.1);" />
       <div class="feature-grid">
         <article><h3 style="color:#f0d1b3;">Community (65%)</h3><p>65,000,000 $POKER tokens dedicated to rewarding active players and ecosystem participants.</p><ul><li>Airdrops: Season 1 begins in H2 2025, rewarding gameplay and participation</li><li>Gameplay Rewards: Active players earn points toward airdrops</li></ul></article>
         <article><h3 style="color:#f0d1b3;">Core Contributors (20%)</h3><p>20,000,000 $POKER tokens allocated to the development team and early contributors.</p><ul><li>Locked for 1 year after TGE</li><li>Vested linearly over 2 years following the lock period</li><li>Ensures long-term alignment of the team with the project</li><li>Incentivizes continuous development and improvement</li></ul></article>
         <article><h3 style="color:#f0d1b3;">Foundation (15%)</h3><p>15,000,000 $POKER tokens reserved for ecosystem growth and development.</p><ul><li>Marketing: Strategic partnerships and user acquisition</li><li>Development: Funding for new features and improvements</li><li>Partnerships: Strategic collaborations with crypto and gaming projects</li><li>Ecosystem Development: Supporting community-led initiatives</li><li>Liquidity Bootstrap: Initial liquidity for the token</li></ul></article>
-        <article><h3 style="color:#f0d1b3;">Airdrop Strategy</h3><p>Season 1 airdrops (H2 2026) will primarily reward active gameplay and participation:</p><ul><li>Majority of points earned through hands played and tournaments entered</li><li>Minor points for community participation (Discord, etc.)</li><li>Anti-Sybil measures to prevent exploitation</li><li>Specific requirements undisclosed to prevent gaming the system</li><li>Designed to reward genuine poker players, not airdrop farmers</li></ul></article>
+        <article><h3 style="color:#f0d1b3;">Airdrop Strategy</h3><p>Season 1 airdrops (2027) will primarily reward active gameplay and participation:</p><ul><li>Majority of points earned through hands played and tournaments entered</li><li>Minor points for community participation (Discord, etc.)</li><li>Anti-Sybil measures to prevent exploitation</li><li>Specific requirements undisclosed to prevent gaming the system</li><li>Designed to reward genuine poker players, not airdrop farmers</li></ul></article>
       </div>
       <h2>Revenue Model & Buyback</h2>
       <div class="feature-grid">
@@ -164,10 +176,6 @@ export const docs: DocPage[] = [
           <div style="padding:0;background:none;border:none;">
             <h3 style="margin-top:0;color:#f0d1b3;font-size:16px;">Bot Detection</h3>
             <p style="margin:0;font-size:14px;color:#e8d5c4;">Behavior analysis tools identify non-human playing patterns, with CAPTCHA challenges for suspicious accounts and manual review of flagged accounts.</p>
-          </div>
-          <div style="padding:0;background:none;border:none;">
-            <h3 style="margin-top:0;color:#f0d1b3;font-size:16px;">Random Number Generation</h3>
-            <p style="margin:0;font-size:14px;color:#e8d5c4;">Industry-standard RNG certificate ensures truly random card dealing, with each shuffle and deal verifiable.</p>
           </div>
           <div style="padding:0;background:none;border:none;">
             <h3 style="margin-top:0;color:#f0d1b3;font-size:16px;">Multi-Account Prevention</h3>
@@ -520,14 +528,12 @@ export const docs: DocPage[] = [
               <h5 style="margin-top:0;font-size:15px;color:#f0d1b3;">Platform Upgrades</h5>
               <ul style="margin-bottom:0;color:#e8d5c4;">
                 <li>Add Tournaments</li>
-                <li>In-Game features: Run it twice, bombpot, etc.</li>
-                <li>Additional game mode: Pot Limit Omaha.</li>
               </ul>
             </article>
           </div>
         </li>
         <li style="margin-bottom:40px;color:#f0d1b3;">
-          <h3 style="display:inline-block;margin:0 0 16px 0;font-size:18px;">2026 <span style="font-size:14px;color:#a9bbc9;font-style:italic;">(Q1-Q2)</span></h3>
+          <h3 style="display:inline-block;margin:0 0 16px 0;font-size:18px;">2027</h3>
           <h4 style="margin:0 0 16px 0;font-size:16px;">$POKER Token Launch & Season 1 End</h4>
           <div class="feature-grid">
             <article>
@@ -550,12 +556,14 @@ export const docs: DocPage[] = [
           </div>
         </li>
         <li style="margin-bottom:40px;color:#f0d1b3;">
-          <h3 style="display:inline-block;margin:0 0 16px 0;font-size:18px;">2026 <span style="font-size:14px;color:#a9bbc9;font-style:italic;">(Q1-Q2)</span></h3>
+          <h3 style="display:inline-block;margin:0 0 16px 0;font-size:18px;">2027</h3>
           <h4 style="margin:0 0 16px 0;font-size:16px;">Advanced Features & Ecosystem Development</h4>
           <div class="feature-grid">
             <article>
               <h5 style="margin-top:0;font-size:15px;color:#f0d1b3;">Advanced Platform Features</h5>
               <ul style="margin-bottom:0;color:#e8d5c4;">
+                <li>In-Game features: Run it twice, bombpot, etc.</li>
+                <li>Additional game mode: Pot Limit Omaha.</li>
                 <li>Mobile native apps (iOS & Android)</li>
                 <li>Advanced staking tiers and benefits</li>
                 <li>Built-in tournament creation tools</li>
@@ -622,14 +630,26 @@ export const docs: DocPage[] = [
         </article>
         <article style="display:flex;align-items:center;gap:24px;padding:30px;">
           <div style="flex-shrink:0;">
-            <img src="/dub.png" alt="David Dub" style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.1);" />
+            <img src="/broje.jpg" alt="Broje" style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.1);" />
           </div>
           <div style="flex:1;">
             <div style="display:flex;align-items:center;gap:12px;">
-              <h3 style="margin:0;font-size:24px;color:#f0d1b3;">David Dub</h3>
+              <h3 style="margin:0;font-size:24px;color:#f0d1b3;">Broje</h3>
             </div>
-            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Co-founder</p>
-            <p style="margin:0;font-size:14px;line-height:1.6;">A serial entrepreneur with a successful crypto fintech exit, David brings business acumen and startup expertise to the team. His passion for poker and user-owned platforms drives his vision for revolutionizing the online poker industry through decentralization and player empowerment.</p>
+            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Full Stack Developer</p>
+            <p style="margin:0;font-size:14px;line-height:1.6;">Full stack developer, joined us from very early days as frontend UX and took over the reins later on.</p>
+          </div>
+        </article>
+        <article style="display:flex;align-items:center;gap:24px;padding:30px;">
+          <div style="flex-shrink:0;">
+            <img src="/rebo.jpg" alt="REBO" style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.1);" />
+          </div>
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <h3 style="margin:0;font-size:24px;color:#f0d1b3;">REBO</h3>
+            </div>
+            <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Software Engineer</p>
+            <p style="margin:0;font-size:14px;line-height:1.6;">REBO pairs a background in software engineering with a passion for web3, market trading, and poker. Bringing market experience and dev know-how, he adds the tech spice that makes onboarding players seamless and builds an awesome gaming experience.</p>
           </div>
         </article>
       </div>
@@ -645,7 +665,7 @@ export const docs: DocPage[] = [
           <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:grid;place-items:center;margin-bottom:16px;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a9bbc9" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
           </div>
-          <h3 style="margin-top:0;">Transparency & Trust</h3><p>Everything we do is transparent - from our provably fair gameplay mechanics to on-chain revenue distribution. Trust is built through verifiable systems, not promises.</p>
+          <h3 style="margin-top:0;">Transparency & Trust</h3><p>Everything we do is transparent - from our on-chain settlement to revenue distribution. Trust is built through verifiable systems, not promises.</p>
         </article>
         <article>
           <div style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.05);display:grid;place-items:center;margin-bottom:16px;">
@@ -679,7 +699,7 @@ export const docs: DocPage[] = [
       <h3 style="color:#f0d1b3;">1. Why should I play on your site?</h3>\n      <p>Most poker sites rely on a convoluted and opaque rewards system—rakeback tiers, bad beat jackpots, lottery chests, cashback promos. But let’s be honest: the bulk of those “rewards” go to business owners, agents, and affiliates. In many cases, affiliates walk away with half the rake. That’s not a joke—half. And when they negotiate deals, players are treated like inventory: “I can bring 10,000 players to your site." It’s an outdated model built around middlemen, and it’s reached a saturation point. Nobody wants to lower rake anymore because nobody wants to give up their slice of the pie.</p>\n      <p>In short, it's very negative EV to play on mainstream sites!</p>\n      <p>At PurrPoker, we believe there’s a better way forward. Give us the chance to build a modern, transparent, and fully onchain poker platform that actually puts players first. We're not just talking—we're giving away 65% of the protocol over the next three years through our airdrop and incentives program. That's not marketing spin—it’s a real ownership offer. And in our view, it’s one of the most generous equity distributions in this space.</p>\n      <p>We run a lean, focused team—no bloat, no influencer circus, no artificial hype. That lets us pass the cost savings back to you. We avoid wasteful marketing spend but don’t cut corners where it matters—security is non-negotiable.</p>\n      <p>As the protocol matures, we plan to lower the rake even further and introduce a more aggressive, performance-based rakeback system. But early on, the real value comes from equity distribution. We're here to disrupt poker with web3 principles: transparency, ownership, and open access.</p>\n      <p>So if you believe in that vision—pull up a seat.</p>\n      <h3 style="color:#f0d1b3;">2. Why build on Hyperliquid EVM?</h3>\n      <p>Hyperliquid EVM is one of the fastest-growing ecosystems in crypto right now—and for good reason. It’s fast, low-gas and purpose-built for high-performance DeFi and onchain applications.</p>\n      <p>We believe it represents the future model of blockchain tech: scalable, composable, and wallet-native. No unnecessary overhead, no L1 lag, no rollup spaghetti. Just a clean, vertical stack that works.</p>\n      <p>For us, that means:</p>\n      <p style="margin-left: 20px;">• Seamless gameplay straight from your wallet
 • Instant settlement
 • Real composability with the rest of onchain DeFi
-• True transparency—nothing hidden, everything onchain</p>\n      <h3 style="color:#f0d1b3;">3. What makes PurrPoker special?</h3>\n      <p>Crypto-native to the core. We're aligned with web3 values: transparency, fairness, and ownership.</p>\n      <p>No counterparty risk. Play directly from your wallet. No deposits, no intermediaries, no lock-ins.</p>\n      <p>Lean team, real mission. We're not here to milk VC grants or hand tokens to influencers. All value flows back to the players.</p>\n      <p>Low rake, high rewards, no strings. No confusing rakeback or loyalty schemes. We’re the first to run this model, and it’s what inspired us to build PurrPoker.</p>\n      <p>Regulated and responsible. Licensed and compliant without compromising crypto ethos.</p>\n      <p>No fluff marketing. We’re not against it—but we’ve set a high hurdle. No forced sponsorships, no influencer circus. If you earn it, you get rewarded.</p>\n      <h3 style="color:#f0d1b3;">4. What's our vision?</h3>\n      <p>To build the go-to poker protocol in crypto—fully onchain, fully transparent, and fully owned by its players.</p>\n      <p>We’re creating a player-first platform with:<br/>• Open performance metrics visible only to you: lifetime BB/100 won, performance variance, seat stats<br/>• Onchain rake + rewards, visible to anyone, anytime<br/>• Transparent, provable outcomes<br/>• Player governance and shared upside via protocol token</p>\n      <p>We also aim to challenge mainstream poker sites as crypto adoption accelerates via web3 ethos.</p>\n      <h3 style="color:#f0d1b3;">5. Will you be issuing a token?</h3>\n      <p>Yes, Issuing a token allows us to align the incentives of the platform with the players from day one. It’s not about speculation—it’s about coordination. A token lets us bootstrap the ecosystem without relying on extractive models like high rake, opaque rewards, or centralized decision-making. Instead, it enables us to run a lean protocol with lower rake, higher rewards, and onchain transparency. No lotteries, no hidden cashback loops—just clean, provable, player-aligned economics. Over time, it also opens the door to player governance and true protocol ownership, where the people who use PurrPoker are the ones who shape its future.</p>\n      <h3 style="color:#f0d1b3;">6. Do I need to KYC?</h3>\n      <p>As we are still in an invite-only beta phase, not for now. However, in future as we grow larger and fall into various regulatory purview, we may implement KYC for large pots (>$10,000). Fret not, your funds will never be frozen (we have no ability to), just that your address may be denied from being dealt hands after a pre-defined time period.</p>\n      <h3 style="color:#f0d1b3;">7. Why does my wallet shows a phishing risk for PurrPoker?</h3>\n      <p>Note that this is not an indication that our contract is malicious. It simply means the contract is new and has not yet built up reputation in your wallet’s risk-scoring system. <br/>Think of it like a brand-new website: until traffic and verification data exist, security plugins default to “unknown”.</p>\n      <p>The contract is deployed by our official team the code is verified on-chain and can be independently inspected.</p>\n      <p>We encourage anyone to test with a small amount first and review transactions via a block explorer.</p>\n      <p>After the game, you may revoke the allowances as a good wallet hygiene pratice.</p>\n      <p>As the user base grows, we plan to reach out to wallet providers so this warning should disappear. In the meantime, rest assured: if you interact only with our official contract, you are safe.</p>\n      <h3 style="color:#f0d1b3;">8. I am having trouble adding HyperEVM network to my wallet.</h3>
+• True transparency—nothing hidden, everything onchain</p>\n      <h3 style="color:#f0d1b3;">3. What makes PurrPoker special?</h3>\n      <p>Crypto-native to the core. We're aligned with web3 values: transparency, fairness, and ownership.</p>\n      <p>No counterparty risk. Play directly from your wallet. No deposits, no intermediaries, no lock-ins.</p>\n      <p>Lean team, real mission. We're not here to milk VC grants or hand tokens to influencers. All value flows back to the players.</p>\n      <p>Low rake, high rewards, no strings. No confusing rakeback or loyalty schemes. We’re the first to run this model, and it’s what inspired us to build PurrPoker.</p>\n      <p>Regulated and responsible. Licensed and compliant without compromising crypto ethos.</p>\n      <p>No fluff marketing. We’re not against it—but we’ve set a high hurdle. No forced sponsorships, no influencer circus. If you earn it, you get rewarded.</p>\n      <h3 style="color:#f0d1b3;">4. What's our vision?</h3>\n      <p>To build the go-to poker protocol in crypto—fully onchain, fully transparent, and fully owned by its players.</p>\n      <p>We’re creating a player-first platform with:<br/>• Open performance metrics visible only to you: lifetime BB/100 won, performance variance, seat stats<br/>• Onchain rake + rewards, visible to anyone, anytime<br/>• Player governance and shared upside via protocol token</p>\n      <p>We also aim to challenge mainstream poker sites as crypto adoption accelerates via web3 ethos.</p>\n      <h3 style="color:#f0d1b3;">5. Will you be issuing a token?</h3>\n      <p>Yes, Issuing a token allows us to align the incentives of the platform with the players from day one. It’s not about speculation—it’s about coordination. A token lets us bootstrap the ecosystem without relying on extractive models like high rake, opaque rewards, or centralized decision-making. Instead, it enables us to run a lean protocol with lower rake, higher rewards, and onchain transparency. No lotteries, no hidden cashback loops—just clean, transparent, player-aligned economics. Over time, it also opens the door to player governance and true protocol ownership, where the people who use PurrPoker are the ones who shape its future.</p>\n      <h3 style="color:#f0d1b3;">6. Do I need to KYC?</h3>\n      <p>As we are still in an invite-only beta phase, not for now. However, in future as we grow larger and fall into various regulatory purview, we may implement KYC for large pots (>$10,000). Fret not, your funds will never be frozen (we have no ability to), just that your address may be denied from being dealt hands after a pre-defined time period.</p>\n      <h3 style="color:#f0d1b3;">7. Why does my wallet shows a phishing risk for PurrPoker?</h3>\n      <p>Note that this is not an indication that our contract is malicious. It simply means the contract is new and has not yet built up reputation in your wallet’s risk-scoring system. <br/>Think of it like a brand-new website: until traffic and verification data exist, security plugins default to “unknown”.</p>\n      <p>The contract is deployed by our official team the code is verified on-chain and can be independently inspected.</p>\n      <p>We encourage anyone to test with a small amount first and review transactions via a block explorer.</p>\n      <p>After the game, you may revoke the allowances as a good wallet hygiene pratice.</p>\n      <p>As the user base grows, we plan to reach out to wallet providers so this warning should disappear. In the meantime, rest assured: if you interact only with our official contract, you are safe.</p>\n      <h3 style="color:#f0d1b3;">8. I am having trouble adding HyperEVM network to my wallet.</h3>
       <p>Try https://chainlist.org/</p>\n      <p>Can't see your USDT0? Add manually via token contract: 0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb</p>\n      <h3 style="color:#f0d1b3;">9. Can owners see our hole cards?</h3>\n      <p>We take security & fairness very seriously. We designed the system so trust isn’t required, and even we can’t see or tamper with live cards.</p>\n      <p>Security & Fairness<br/>PurrPoker is built with a strict “operator-blind” architecture. Hole cards and sensitive game data are encrypted end-to-end and only decrypted on the player’s client at the moment they are needed. Core game logic, dealing, and settlement are isolated from administrative systems, and no employee (including founders or developers) has direct access to live game state or player cards. All critical actions are automatically logged in tamper-evident systems, making unauthorized access detectable and auditable. Settlement and balances are enforced onchain via smart contracts, removing discretionary control and reducing attack surface. <br/>In short: we cannot peek, alter outcomes, or quietly intervene — the system is intentionally designed so that doing so would be technically infeasible and immediately detectable.</p>\n      <h3 style="color:#f0d1b3;">10. What are your fees?</h3>\n      <p style="color:white; font-weight:bold;">3.5% capped</p>\n      <p>Eg. For $1/2 6-players, if the pot post-flop is $100, the rake is $3.5.<br/>If the pot is $300, the rake is $4 (capped at 2BB).<br/>If there are only 3 seated players, the rake is $2.5 as a 50% discount is applied to the cap.</p>\n      <p>PurrPoker embraces Hyperliquid's ethos of keeping fees minimal. We operate with a lean team, meaning less spend on marketing and fewer reward handouts - allowing us to pass the savings on to players. We also follow a "No flop, no drop" policy: if a hand doesn't see a flop, no rake is taken.<br/>We absorb all gas fees during play — you only pay gas once when sitting down.</p>\n      <p>For tournaments, a 10% fee is applied.</p>\n      <img src="/rake.png" alt="Rake Info" style="width:100%; max-width: 600px; margin: 40px auto 10px; display: block; border-radius: 12px;" />
     `
   },
@@ -988,7 +1008,7 @@ export const docs: DocPage[] = [
     description: "",
     html: `
       <p>1. INTRODUCTION</p>
-      <p>1.1 Purr Poker is a decentralized poker dApp on Hyperliquid EVM, built by poker and crypto enthusiasts to deliver instant-settlement gameplay, provably fair mechanics, and a user-owned ecosystem. With a 3.5% Rake (vs. industry standard 5%), transparent redistribution to $POKER tokenholders, and no KYC barriers, Purr Poker eliminates the frustrations of centralized platforms.</p>
+      <p>1.1 Purr Poker is a decentralized poker dApp on Hyperliquid EVM, built by poker and crypto enthusiasts to deliver instant-settlement gameplay and a user-owned ecosystem. With a 3.5% Rake (vs. industry standard 5%), transparent redistribution to $POKER tokenholders, and no KYC barriers, Purr Poker eliminates the frustrations of centralized platforms.</p>
       <p>1.2 Below you will find PurrPoker’s Software End User License Agreement (hereafter referred to as “Agreement”), which outlines the terms and conditions (hereafter referred to as “Terms”) for use of the PurrPoker platform. We kindly ask you to review them carefully.</p>
       <p>1.3 For the purposes of the Agreement, the definition of ”DApp” (decentralised application) will refer to the PurrPoker web-based site from the website app.purrpoker.xyz and the PurrPoker mobile software application as well as all ancillary software to the poker software (whether web-based software or client/server software).</p>
       <p>2. ACCEPTANCE OF TERMS</p>
