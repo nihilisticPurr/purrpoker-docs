@@ -637,7 +637,7 @@ export const docs: DocPage[] = [
               <h3 style="margin:0;font-size:24px;color:#f0d1b3;">Broje</h3>
             </div>
             <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Chief Technology Officer</p>
-            <p style="margin:0;font-size:14px;line-height:1.6;">Full stack developer, joined us from very early days as frontend UX and took over the reins later on.</p>
+            <p style="margin:0;font-size:14px;line-height:1.6;">With over a decade of experience in software engineering and blockchain development, Broje specialises in building scalable blockchain solutions, with a focus on AI-driven products and intelligent systems. Before joining PurrPoker, he spent nearly two years as a full-time developer at Gravitad, a blockchain-focused technology company, and eight years at Energi, a cryptocurrency project combining blockchain technology with a focus on security and adoption, where he contributed to IT infrastructure and software development.</p>
           </div>
         </article>
         <article style="display:flex;align-items:center;gap:24px;padding:30px;">
