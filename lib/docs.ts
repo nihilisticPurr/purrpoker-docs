@@ -615,17 +615,17 @@ export const docs: DocPage[] = [
       <div class="feature-grid" style="grid-template-columns: 1fr; margin-bottom: 40px;">
         <article style="display:flex;align-items:center;gap:24px;padding:30px;">
           <div style="flex-shrink:0;">
-            <img src="/0xmeerkat.png" alt="0xMeerkat" style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.1);" />
+            <img src="/0xmeerkat.png" alt="Meerkat" style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,.1);" />
           </div>
           <div style="flex:1;">
             <div style="display:flex;align-items:center;gap:12px;">
-              <h3 style="margin:0;font-size:24px;color:#f0d1b3;">0xMeerkat</h3>
+              <h3 style="margin:0;font-size:24px;color:#f0d1b3;">Meerkat</h3>
               <a href="https://x.com/macro_meerkat" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;color:#a9bbc9;transition:color 0.2s;" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#a9bbc9'">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
             <p style="margin:4px 0 12px;color:#a9bbc9;font-size:16px;">Founder</p>
-            <p style="margin:0;font-size:14px;line-height:1.6;">With almost 10 years experience as an Tradfi market-maker, with an extensive background in FX, bonds and derivatives, 0xMeerkat brings financial expertise to Purr Poker. An avid poker player and crypto trader, he combines his passion for both worlds to create a truly player-focused platform.</p>
+            <p style="margin:0;font-size:14px;line-height:1.6;">With almost 10 years experience as an Tradfi market-maker, with an extensive background in FX, bonds and derivatives, Meerkat brings financial expertise to Purr Poker. An avid poker player and crypto trader, he combines his passion for both worlds to create a truly player-focused platform.</p>
           </div>
         </article>
         <article style="display:flex;align-items:center;gap:24px;padding:30px;">
