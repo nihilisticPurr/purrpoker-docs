@@ -752,15 +752,15 @@ export const docs: DocPage[] = [
           </div>
         </article>
         <article style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
-          <div style="background:#07111a;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
-            <img src="/branding/rr1.png" alt="Purr Poker RR Icon Badge" style="max-width:100%;max-height:130px;object-fit:contain;border-radius:24px;" />
+          <div style="background:#07111a;border-radius:14px;padding:32px 24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
+            <img src="/branding/rr_white.png" alt="Purr Poker RR Monogram White Mark" style="max-width:100%;max-height:100px;object-fit:contain;" />
           </div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
             <div>
-              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">RR App Icon</h3>
-              <small style="color:#a9bbc9;">rr1.png</small>
+              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">RR Monogram White Mark</h3>
+              <small style="color:#a9bbc9;">rr_white.png</small>
             </div>
-            <a href="/branding/rr1.png" download="rr1.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
+            <a href="/branding/rr_white.png" download="rr_white.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
           </div>
         </article>
       </div>
