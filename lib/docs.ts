@@ -707,6 +707,66 @@ export const docs: DocPage[] = [
     `
   },
   {
+    title: "Brand Kit",
+    slug: "brand-kit",
+    group: "Project",
+    description: "Official Purr Poker logos, marks, and brand assets.",
+    html: `
+      <p class="lead">Download official Purr Poker logos and brand marks for media, community content, and partnership integrations.</p>
+      <h2>Logos &amp; Marks</h2>
+      <div class="feature-grid">
+        <article style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+          <div style="background:#f5f2eb;border-radius:14px;padding:32px 24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
+            <img src="/branding/logo.png" alt="Purr Poker Primary Logo" style="max-width:100%;max-height:110px;object-fit:contain;" />
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div>
+              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">Primary Logo</h3>
+              <small style="color:#a9bbc9;">logo.png</small>
+            </div>
+            <a href="/branding/logo.png" download="logo.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
+          </div>
+        </article>
+        <article style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+          <div style="background:#07111a;border-radius:14px;padding:32px 24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
+            <img src="/branding/logo_white.png" alt="Purr Poker White Logo" style="max-width:100%;max-height:110px;object-fit:contain;" />
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div>
+              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">White Logo</h3>
+              <small style="color:#a9bbc9;">logo_white.png</small>
+            </div>
+            <a href="/branding/logo_white.png" download="logo_white.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
+          </div>
+        </article>
+        <article style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+          <div style="background:#f5f2eb;border-radius:14px;padding:32px 24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
+            <img src="/branding/rr.png" alt="Purr Poker RR Mark" style="max-width:100%;max-height:100px;object-fit:contain;" />
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div>
+              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">RR Monogram Mark</h3>
+              <small style="color:#a9bbc9;">rr.png</small>
+            </div>
+            <a href="/branding/rr.png" download="rr.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
+          </div>
+        </article>
+        <article style="display:flex;flex-direction:column;justify-content:space-between;gap:16px;">
+          <div style="background:#07111a;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid rgba(255,255,255,.08);">
+            <img src="/branding/rr1.png" alt="Purr Poker RR Icon Badge" style="max-width:100%;max-height:130px;object-fit:contain;border-radius:24px;" />
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div>
+              <h3 style="margin:0;font-size:17px;color:#f0d1b3;">RR App Icon</h3>
+              <small style="color:#a9bbc9;">rr1.png</small>
+            </div>
+            <a href="/branding/rr1.png" download="rr1.png" style="padding:8px 14px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#f7fbff;font-size:13px;font-weight:600;text-decoration:none;">Download PNG</a>
+          </div>
+        </article>
+      </div>
+    `
+  },
+  {
     title: "Community Guidelines",
     slug: "community",
     group: "Community & Legal",
