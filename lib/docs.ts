@@ -186,6 +186,161 @@ export const docs: DocPage[] = [
     `
   },
   {
+    title: "Provably Fair",
+    slug: "provably-fair",
+    group: "Technical",
+    description: "How Purr Poker uses cryptographic commitments, the Fisher-Yates shuffle, and Zero-Knowledge proofs to guarantee every hand is 100% fair and verifiable.",
+    html: `
+      <p class="lead">In online poker, trust shouldn't come from a marketing promise — it should come from math you can verify yourself. Purr Poker's open-source <strong>Provably Fair &amp; Zero-Knowledge RNG</strong> lets any player mathematically verify that every deck is complete, every shuffle is unbiased, and folded or mucked cards remain permanently secret.</p>
+
+      <div class="callout" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;background:rgba(18,55,83,.38);border:1px solid rgba(255,255,255,.12);margin:28px 0;">
+        <div style="flex:1;min-width:260px;">
+          <h3 style="margin:0 0 6px;color:#f0d1b3;font-size:19px;">Open-Source Provably Fair RNG Repository</h3>
+          <p style="margin:0;color:#dce8f0;font-size:14px;">Inspect our cryptographic shuffle engine, Zero-Knowledge deck circuits, CLI auditor, and browser verifier on GitHub.</p>
+        </div>
+        <a href="https://github.com/nihilisticPurr/purr-poker-rng" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:#e5cda8;color:#351a13;font-weight:700;border-radius:10px;text-decoration:none;white-space:nowrap;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          View on GitHub →
+        </a>
+      </div>
+
+      <h2>1. What is an RNG (Random Number Generator)?</h2>
+      <p>In a brick-and-mortar casino, randomness comes from physical physics: a dealer washes the cards across the felt, riffles them together, and hands a plastic cut card to a player. Because nobody can track all 52 cards by eye, the deck is considered random.</p>
+      <p>In online poker, there are no plastic cards. Instead, a <strong>Random Number Generator (RNG)</strong> is the digital engine responsible for generating unpredictable numbers that determine the order of the 52-card deck before a hand is dealt.</p>
+      <div class="feature-grid">
+        <article>
+          <h3 style="color:#f0d1b3;">Traditional "Black-Box" RNGs</h3>
+          <p>Most mainstream poker sites use a server-side RNG hidden behind closed doors. Even when audited once a year, players are forced to blindly trust that the house server is not peeking at hole cards, altering runouts, or favoring certain accounts in real time.</p>
+        </article>
+        <article>
+          <h3 style="color:#f0d1b3;">Cryptographic &amp; Provably Fair RNG</h3>
+          <p>A <strong>Provably Fair RNG</strong> replaces blind trust with cryptography. Instead of the server secretly picking cards on the fly, the deck is cryptographically locked <em>before</em> the hand begins, every player at the table contributes their own random secret to the shuffle, and anyone can verify the math after the hand.</p>
+        </article>
+      </div>
+
+      <h2>2. What is the Fisher-Yates Shuffle?</h2>
+      <p>Once you have a source of random numbers, how do you actually turn a neat, ordered 52-card deck into a perfectly shuffled one? The answer used across computer science is the <strong>Fisher-Yates Shuffle</strong> (first described by Ronald Fisher and Frank Yates in 1938, and adapted for computers by Donald Knuth).</p>
+      <article class="callout" style="padding:24px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.02);">
+        <h3 style="margin-top:0;color:#f0d1b3;">How Fisher-Yates Works in Plain English</h3>
+        <p>Imagine laying all 52 cards face-down in a row numbered from <strong>Spot 52</strong> down to <strong>Spot 1</strong>:</p>
+        <ol>
+          <li>Pick a random position between 1 and 52, and swap that card into <strong>Spot 52</strong>. Spot 52 is now permanently locked in.</li>
+          <li>Now look only at the remaining 51 unshuffled cards (Spots 1 to 51). Pick a random position between 1 and 51, and swap that card into <strong>Spot 51</strong>.</li>
+          <li>Keep counting down (50, 49, 48... all the way to 1), each time picking a random card from the remaining unshuffled pile and locking it into place.</li>
+        </ol>
+        <p style="margin-bottom:0;">In exactly <strong>51 swaps</strong>, every single card has been placed into its final position.</p>
+      </article>
+
+      <h3>Why Fisher-Yates is the Global Gold Standard</h3>
+      <p>There are <strong>52! (52 factorial)</strong> possible ways to arrange a deck of playing cards — that is roughly <strong>80,658,175,170,943,878,571,660,636,856,403,766,975,289,505,440,883,277,824,000,000,000,000</strong> unique decks. If a programmer writes a sloppy shuffle algorithm, some card combinations end up slightly more likely than others.</p>
+      <p>The Fisher-Yates shuffle is mathematically proven to be <strong>100% unbiased</strong>: every single one of those $52!$ deck arrangements has the exact same probability of occurring. Because of its simplicity and mathematical perfection, Fisher-Yates is used everywhere — from regulated gaming engines, scientific Monte Carlo simulations, and cryptographic protocols to everyday apps like video games and music playlist shufflers.</p>
+      <p>In Purr Poker's implementation, we combine Fisher-Yates with <strong>32-bit rejection sampling</strong>, which eliminates even microscopic "modulo bias" when turning raw 256-bit cryptographic hashes into swap numbers.</p>
+
+      <h2>3. How Purr Poker Uses Its RNG (The "52 Sealed Envelopes" Model)</h2>
+      <p>Early crypto poker sites introduced basic "commit-reveal" shuffling, where players help shuffle the deck. However, basic commit-reveal has a famous catch: if a site reveals the entire deck seed after a hand so you can verify the shuffle, your opponents can also see the cards you <strong>folded or mucked</strong>! Conversely, if the site hides the un-dealt cards, how do you know the unopened cards didn't contain duplicate Aces?</p>
+      <p>Purr Poker solves both problems simultaneously using <strong>Opaque Salted Commitments</strong>, <strong>Selective Card Openings</strong>, and <strong>Zero-Knowledge (ZK) Deck Proofs</strong>.</p>
+
+      <div class="feature-grid">
+        <article>
+          <h3 style="color:#f0d1b3;">Traditional Commit-Reveal</h3>
+          <p style="font-style:italic;color:#e8d5c4;">"Here are 52 sealed envelopes. I promise there is a proper deck inside. Everyone helps rearrange the envelopes, and I'll let you open the envelopes you're entitled to see."</p>
+        </article>
+        <article>
+          <h3 style="color:#f0d1b3;">Purr Poker's ZK Upgrade</h3>
+          <p style="font-style:italic;color:#e8d5c4;">"Here are 52 sealed envelopes, <strong>plus a mathematical Zero-Knowledge proof that the envelopes contain exactly one complete 52-card deck</strong>. Everyone helps rearrange them, and you only open the envelopes you're entitled to see."</p>
+        </article>
+      </div>
+
+      <h3>Step-by-Step Lifecycle of a Purr Poker Hand</h3>
+      <ol class="steps">
+        <li>
+          <strong>52 Sealed Envelopes (256-Bit Salted Card Commitments)</strong><br/>
+          Before a hand begins, the server places each of the 52 playing cards into its own digital "sealed envelope" locked with a unique <strong>256-bit random salt</strong>. The server locks all 52 envelopes into a single cryptographic fingerprint called a <strong>Deck Merkle Root</strong> and broadcasts it to the table. Once locked, the contents of those 52 envelopes can never be altered.
+        </li>
+        <li>
+          <strong>Everyone Contributes Randomness (Commit-Before-Reveal Entropy)</strong><br/>
+          Every seated player (via their client) and the server generate their own <strong>256-bit secret random number (entropy)</strong> and submit a locked hash commitment of it. Only after everyone's commitment is locked on the table does everyone reveal their secret numbers. Because everyone commits before anyone reveals, neither the server nor any player can manipulate the final seed.
+        </li>
+        <li>
+          <strong>SHAKE256 / HKDF Master Seed &amp; Unbiased Fisher-Yates</strong><br/>
+          All revealed 256-bit secrets (from the server and every player at the table) are combined through <strong>SHAKE256</strong> (or <strong>HKDF-SHA256</strong>) to create the Master Shuffle Seed. That seed drives our unbiased <strong>Fisher-Yates shuffle</strong>, rearranging the 52 sealed envelopes into their final dealing order.
+        </li>
+        <li>
+          <strong>Zero-Knowledge Proof of a Valid 52-Card Deck</strong><br/>
+          Without opening any envelopes, the server generates a <strong>Zero-Knowledge Deck Validity Proof</strong> (using algebraic Pedersen commitments, Schwartz-Zippel polynomial grand products, and Circom/Groth16 zk-SNARK circuits). This proves to everyone at the table that:
+          <ul>
+            <li>The 52 sealed envelopes contain <strong>exactly 52 unique, valid poker cards</strong> (no missing outs, no duplicate Aces).</li>
+            <li>The shuffle is an exact mathematical permutation of those 52 locked envelopes.</li>
+            <li>Every dealt card comes from its proper position in the shuffled deck.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Selective Card Openings (Folded &amp; Mucked Cards Stay Secret Forever)</strong><br/>
+          As cards are dealt, the server sends the "envelope key" (the 256-bit salt and Merkle proof) <strong>only for cards you are entitled to see</strong>:
+          <ul>
+            <li>Your own private hole cards (sent privately to you).</li>
+            <li>Community board cards — Flop, Turn, and River (sent publicly to the table).</li>
+            <li>Hands turned face-up at Showdown.</li>
+          </ul>
+          If you fold pre-flop or muck your hand at showdown, <strong>your hole-card salts are permanently withheld</strong>. Even in a 2-player Heads-Up match where your opponent knows every entropy seed and the exact shuffle order, they can never figure out what cards you mucked.
+        </li>
+      </ol>
+
+      <h2>4. How Players Can Verify Our Claims</h2>
+      <p>You don't need a PhD in cryptography — or permission from Purr Poker — to audit a hand. Every completed hand produces a self-contained <strong>Public Hand Proof JSON</strong> that can be verified completely offline using our public GitHub tools.</p>
+
+      <div class="stat-grid">
+        <div>
+          <span>Stage 1–2</span>
+          <strong>Commitments &amp; Entropy</strong>
+          <small style="display:block;margin-top:6px;color:#a9bbc9;">Verifies the 52 sealed envelopes match the locked Merkle root and every player's 256-bit seed matches their pre-hand lock.</small>
+        </div>
+        <div>
+          <span>Stage 3–5</span>
+          <strong>Shuffle &amp; ZK Deck Proof</strong>
+          <small style="display:block;margin-top:6px;color:#a9bbc9;">Re-runs SHAKE256/HKDF + Fisher-Yates to confirm the exact card order, and verifies the Zero-Knowledge 52-card bijection proof.</small>
+        </div>
+        <div>
+          <span>Stage 6–7</span>
+          <strong>Openings &amp; Muck Privacy</strong>
+          <small style="display:block;margin-top:6px;color:#a9bbc9;">Confirms every revealed card matches its locked 256-bit salt while verifying folded and mucked cards leaked zero secrets.</small>
+        </div>
+      </div>
+
+      <h3>Two Ways to Verify Any Hand</h3>
+      <div class="feature-grid">
+        <article>
+          <h3 style="color:#f0d1b3;">1. Standalone Browser Verifier (No Setup Required)</h3>
+          <p>Inside the repository's <code>web/index.html</code> tool, we provide a zero-dependency Web Verifier powered by your browser's native Web Crypto API:</p>
+          <ul>
+            <li>Paste any Hand Proof JSON (or click <strong>"Generate &amp; Load Live Sample Hand"</strong>).</li>
+            <li>Watch all 7 cryptographic checks run locally in milliseconds.</li>
+            <li>Click <strong>"Simulate Malicious Duplicate Card"</strong> to see how the Zero-Knowledge verifier immediately catches a tampered deck even when cards are sealed.</li>
+          </ul>
+        </article>
+        <article>
+          <h3 style="color:#f0d1b3;">2. Command-Line (CLI) Auditor for Developers</h3>
+          <p>Anyone with Node.js can clone our public GitHub repository and run the full cryptographic test suite and CLI verifier directly on their machine:</p>
+          <p><code>git clone https://github.com/nihilisticPurr/purr-poker-rng.git</code><br/>
+          <code>cd purr-poker-rng</code><br/>
+          <code>npm run verify:demo</code><br/>
+          <code>npm test</code></p>
+        </article>
+      </div>
+
+      <div class="callout" style="display:flex;align-items:center;gap:20px;background:#351a13;border:1px solid #4a251a;margin-top:40px;">
+        <div style="background:#654838;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e8d5c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div>
+          <h3 style="margin:0 0 8px;color:#f0d1b3;">Audit the Code Yourself</h3>
+          <p style="margin:0 0 16px;color:#e8d5c4;font-size:15px;">Our entire Provably Fair &amp; Zero-Knowledge RNG protocol is open-source under the MIT License. Inspect the TypeScript SDK, Circom Groth16 circuits, and standalone verifier on GitHub.</p>
+          <a href="https://github.com/nihilisticPurr/purr-poker-rng" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:10px 20px;background:#e5cda8;color:#351a13;font-weight:600;border-radius:8px;text-decoration:none;">Explore GitHub Repository →</a>
+        </div>
+      </div>
+    `
+  },
+  {
     title: "Technology Design",
     slug: "architecture",
     group: "Technical",
